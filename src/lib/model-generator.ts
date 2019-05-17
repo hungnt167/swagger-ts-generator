@@ -11,7 +11,7 @@ import {
   lowerFirst,
   kebabCase,
   snakeCase,
-  upperFirst,
+  camelCase,
   endsWith,
   find,
   each,
@@ -652,7 +652,7 @@ function getTypeName(type: string, options: GeneratorOptions) {
     }
     //classNameSuffixesToRemove
   }
-  return upperFirst(typeName);
+  return camelCase(typeName);
 }
 
 function getTypeNameWithoutSuffixesToRemove(typeName, options) {
